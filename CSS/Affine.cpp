@@ -16,10 +16,10 @@ int modInverse(int a)
 
 int main()
 {
-    string s = "affinecipher";
+    string s = "russelandgavin";
     char k1 = 'f';
     char k2 = 'b';
-    int key = 4;
+    int key = 3;
 
     string o;
     char t;
