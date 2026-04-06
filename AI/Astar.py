@@ -1,5 +1,5 @@
 import heapq
-
+import math
 
 def reconstruct_path(came_from, current):
 	path = [current]
@@ -8,6 +8,18 @@ def reconstruct_path(came_from, current):
 		path.append(current)
 	path.reverse()
 	return path
+
+
+def compute_heuristic(positions, goal):
+	heuristic = []
+	gx, gy = positions[goal]
+
+	for i in range(len(positions)):
+		x, y = positions[i]
+		h = math.sqrt((x - gx)**2 + (y - gy)**2)
+		heuristic.append(h)
+
+	return heuristic
 
 
 def astar(graph, start, goal, heuristic):
@@ -53,22 +65,26 @@ def astar(graph, start, goal, heuristic):
 
 if __name__ == "__main__":
 	graph = [
-		[0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-		[1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-		[1, 0, 0, 1, 1, 0, 0, 0, 0, 0],
-		[0, 1, 1, 0, 0, 1, 0, 0, 0, 0],
-		[0, 0, 1, 0, 0, 1, 1, 0, 0, 0],
-		[0, 0, 0, 1, 1, 0, 0, 1, 0, 0],
-		[0, 0, 0, 0, 1, 0, 0, 1, 1, 0],
-		[0, 0, 0, 0, 0, 1, 1, 0, 0, 1],
-		[0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
-		[0, 0, 0, 0, 0, 0, 0, 1, 1, 0],
+		[0,1,1,0,0,0,0,0,0,0],
+		[1,0,0,1,0,0,0,0,0,0],
+		[1,0,0,1,1,0,0,0,0,0],
+		[0,1,1,0,0,1,0,0,0,0],
+		[0,0,1,0,0,1,1,0,0,0],
+		[0,0,0,1,1,0,0,1,0,0],
+		[0,0,0,0,1,0,0,1,1,0],
+		[0,0,0,0,0,1,1,0,0,1],
+		[0,0,0,0,0,0,1,0,0,1],
+		[0,0,0,0,0,0,0,1,1,0],
 	]
 
-	# Estimated cost from each node to goal node 9.
-	heuristic = [4, 4, 3, 3, 2, 2, 1, 1, 1, 0]
+	positions = {
+		0:(0,0), 1:(1,0), 2:(0,1), 3:(2,0), 4:(1,1),
+		5:(2,1), 6:(1,2), 7:(2,2), 8:(1,3), 9:(2,3)
+	}
 
 	start_node = 0
 	goal_node = 9
+
+	heuristic = compute_heuristic(positions, goal_node)
 
 	astar(graph, start_node, goal_node, heuristic)
