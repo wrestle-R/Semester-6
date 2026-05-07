@@ -1,14 +1,27 @@
 
-int firstRepeatingHash(vector<int>& nums){
-    unordered_set<int> s;
-    int n = nums.size();
+#include <bits/stdc++.h>
+using namespace std;
 
-    for(int i = n - 1; i >= 0; i--){
-        if(s.count(nums[i])){
-            return nums[i];
+int linearSearch(const vector<int>& nums, int target) {
+    for (int i = 0; i < (int)nums.size(); ++i) {
+        if (nums[i] == target) {
+            return i;
         }
-        s.insert(nums[i]);
     }
 
     return -1;
+}
+
+int main() {
+    vector<int> nums = {5, 9, 2, 7, 1, 6};
+    int target = 7;
+
+    int index = linearSearch(nums, target);
+    if (index != -1) {
+        cout << "Element found at index " << index << endl;
+    } else {
+        cout << "Element not found" << endl;
+    }
+
+    return 0;
 }
