@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Management Weeks 7 to 12</title>
+  <style>
+    body {
+      font-family: "Liberation Serif", Georgia, serif;
+      line-height: 1.45;
+      margin: 1.2cm;
+      color: #111;
+    }
+    h1, h2, h3, h4 {
+      color: #0f2d4a;
+      margin-bottom: 0.2em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 0.1em;
+    }
+    h2 {
+      border-bottom: 2px solid #0f2d4a;
+      padding-bottom: 0.15em;
+      margin-top: 1.2em;
+    }
+    h3 {
+      margin-top: 0.9em;
+    }
+    p {
+      margin: 0.35em 0;
+    }
+    .intro {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 1em;
+    }
+    .question {
+      margin-top: 0.7em;
+      font-weight: bold;
+    }
+    .options {
+      margin: 0.2em 0 0.2em 1.1em;
+    }
+    .answer {
+      margin-left: 0.2em;
+      font-weight: bold;
+    }
+    .example {
+      font-style: italic;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+  <h1>Business Management Study Guide</h1>
+  <p class="intro">Weeks 7 to 12 | Concepts, MCQs, and Online Assessment Questions | Written in simple language with examples</p>
+
+  <h2>Week 7</h2>
+  <h3>Concepts</h3>
+
+  <h4>1. Decision-Making Levels in Organizations</h4>
+  <p><strong>Operational management</strong> deals with daily routine decisions such as payroll processing, transaction handling, and attendance recording. These decisions are repetitive and usually follow fixed rules.</p>
+  <p><strong>Tactical management</strong> deals with medium-term planning such as campaign design, budgeting, and departmental strategy. These decisions use both rules and human judgment.</p>
+  <p><strong>Strategic management</strong> focuses on long-term issues such as expansion, investment, and major policy decisions. These decisions are highly unstructured and require experience, judgment, and analysis.</p>
+
+  <h4>2. Types of Decisions</h4>
+  <p><strong>Structured decisions</strong> have clear rules and can be repeated easily. For example, approving a standard reorder point in inventory can be structured.</p>
+  <p><strong>Semi-structured decisions</strong> use both data and human interpretation. A marketing strategy often falls into this category.</p>
+  <p><strong>Unstructured decisions</strong> do not have a clear formula. They require reasoning, judgment, and contextual understanding, such as approving a long-term capital investment.</p>
+
+  <h4>3. BI Infrastructure and AI-Based Decision Support</h4>
+  <p><strong>A data warehouse</strong> is the core BI infrastructure component that stores organized data for reporting, dashboards, and analytics.</p>
+  <p><strong>AI-based decision systems</strong> work best when the objective is clear, the constraints are known, and the possible alternatives are defined. When these conditions exist, AI can support or automate decisions more reliably.</p>
+  <p><strong>An AI assistant</strong> usually responds to a user, explains information, or generates content on request. <strong>An AI agent</strong> goes further by autonomously executing tasks, selecting tools, and completing parts of a workflow.</p>
+
+  <h4>4. Explainable AI and Reasoning Quality</h4>
+  <p><strong>Explainable AI (XAI)</strong> helps people understand how a model reached a decision.</p>
+  <p><strong>SHAP</strong> and <strong>LIME</strong> are popular XAI tools. They explain a prediction by showing which features pushed the result upward or downward.</p>
+  <p>This is important because decision systems are more trustworthy when people can understand the reason behind the output.</p>
+
+  <h4>5. Correlation, Causation, and Bias</h4>
+  <p><strong>Correlation</strong> means two things move together. <strong>Causation</strong> means one actually causes the other. Analysts must not confuse the two.</p>
+  <p><strong>Anchoring bias</strong> happens when the first piece of information influences judgment too strongly. <strong>Confirmation bias</strong> happens when people only look for evidence that supports what they already believe. <strong>Overconfidence bias</strong> happens when people trust their own judgment too much.</p>
+
+  <h4>6. Decision Trees</h4>
+  <p><strong>A decision tree</strong> is a supervised learning model that makes predictions through a series of if-then splits. Its goal is to create groups that are as pure or homogeneous as possible.</p>
+  <p><strong>The root node</strong> is the starting point and represents the full dataset. <strong>A split</strong> divides the data based on a selected attribute. <strong>A leaf node</strong> gives the final prediction or class.</p>
+  <p><strong>Induction</strong> means learning general rules from data examples.</p>
+
+  <h4>7. Attribute Selection and Tree Growth</h4>
+  <p>To choose the best attribute for a split, decision trees use measures such as <strong>Gini Index</strong> and <strong>Entropy</strong>. Lower impurity means a better split.</p>
+  <p><strong>A greedy algorithm</strong> chooses the best local split at each step rather than searching for the globally perfect tree.</p>
+  <p><strong>Overfitting</strong> happens when a tree becomes too detailed and memorizes the training data.</p>
+
+  <h4>8. Pruning and Ensemble Methods</h4>
+  <p><strong>Pre-pruning</strong> stops the tree early, but it may miss useful splits. <strong>Post-pruning</strong> grows the tree fully and then cuts unnecessary branches, which is often better.</p>
+  <p><strong>Bagging</strong> builds many trees in parallel and combines them by voting. <strong>Boosting</strong> builds trees sequentially, where each new model tries to correct the previous model’s mistakes.</p>
+  <p><strong>Random Forest</strong> is a bagging-based method that also adds random feature selection. <strong>Bootstrapping</strong> means sampling with replacement to create many training datasets.</p>
+
+  <p class="example"><strong>Example:</strong> In fraud detection, a decision tree may first split on transaction amount, then on country, and then on device type. Each split tries to make the fraud and non-fraud groups cleaner.</p>
+
+  <h3>MCQs</h3>
+  <p class="question">1. Which management level mainly handles routine daily decisions?</p>
+  <p class="options">A) Strategic management<br>B) Tactical management<br>C) Operational management<br>D) Governance management</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">2. Which of the following is an example of an unstructured decision?</p>
+  <p class="options">A) Payroll processing<br>B) Inventory reorder<br>C) Capital investment approval<br>D) Sales entry</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">3. Which of the following is a semi-structured decision?</p>
+  <p class="options">A) Attendance logging<br>B) Marketing strategy design<br>C) Billing entry<br>D) Data entry</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">4. What is the core storage component in BI infrastructure?</p>
+  <p class="options">A) Dashboard<br>B) Data warehouse<br>C) CRM<br>D) ERP</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. What is the main purpose of SHAP and LIME?</p>
+  <p class="options">A) To train a model<br>B) To explain predictions<br>C) To clean data<br>D) To store data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. AI-based decision systems perform best when which condition is satisfied?</p>
+  <p class="options">A) Data is missing<br>B) Goals are unclear<br>C) Objectives are clearly defined<br>D) Decisions are random</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">7. What is the key feature of an AI agent?</p>
+  <p class="options">A) Reporting only<br>B) Chatting only<br>C) Autonomous execution of tasks<br>D) Visualization only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">8. What does correlation mean?</p>
+  <p class="options">A) Cause-and-effect relationship<br>B) Relationship only<br>C) No relationship<br>D) Exact prediction</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. What does anchoring bias mean?</p>
+  <p class="options">A) Ignoring all data<br>B) Letting the first information dominate judgment<br>C) Being too confident<br>D) Thinking randomly</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. Which type of learning do decision trees usually belong to?</p>
+  <p class="options">A) Unsupervised learning<br>B) Supervised learning<br>C) Reinforcement learning<br>D) Random learning</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">11. What does the root node in a decision tree represent?</p>
+  <p class="options">A) Final output only<br>B) The full dataset<br>C) The error rate<br>D) One feature value</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">12. What does a leaf node provide in a decision tree?</p>
+  <p class="options">A) Input data<br>B) Final prediction<br>C) Data cleaning<br>D) Error correction</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">13. What is the main purpose of splitting in a decision tree?</p>
+  <p class="options">A) To increase impurity<br>B) To increase purity<br>C) To reduce data size only<br>D) To add noise</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">14. What does homogeneity mean in a decision tree node?</p>
+  <p class="options">A) Mixed classes<br>B) Mostly the same class<br>C) Random data<br>D) Missing values only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">15. What is the Gini value of a completely pure node?</p>
+  <p class="options">A) 1<br>B) 0<br>C) 0.5<br>D) 2</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">16. What is the entropy value of a completely pure node?</p>
+  <p class="options">A) 1<br>B) 0<br>C) 0.5<br>D) -1</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">17. What does a lower Gini value indicate?</p>
+  <p class="options">A) A worse split<br>B) A better split<br>C) No split<br>D) Random behavior</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">18. What type of search strategy do decision trees typically use?</p>
+  <p class="options">A) Greedy strategy<br>B) Random strategy<br>C) Linear strategy<br>D) Static strategy</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">19. In machine learning, what does greedy mean?</p>
+  <p class="options">A) Choosing the best global option<br>B) Choosing the best local option at each step<br>C) Choosing randomly<br>D) Choosing the worst case</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">20. What does overfitting mean in a decision tree?</p>
+  <p class="options">A) Strong generalization<br>B) Memorizing training data<br>C) Simplicity<br>D) Perfect real-world accuracy</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">21. What is a major issue with pre-pruning?</p>
+  <p class="options">A) It always causes overfitting.<br>B) It may stop before finding good splits.<br>C) It is too fast.<br>D) It increases complexity.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">22. Which pruning method is usually considered better?</p>
+  <p class="options">A) Pre-pruning<br>B) Post-pruning<br>C) No pruning<br>D) Random pruning</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">23. What does cost-complexity pruning mainly penalize?</p>
+  <p class="options">A) Accuracy<br>B) Complexity<br>C) Data volume<br>D) Number of classes</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">24. What does the term ensemble mean in machine learning?</p>
+  <p class="options">A) One model only<br>B) Multiple models together<br>C) No model<br>D) A linear model</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">25. How are models built in bagging?</p>
+  <p class="options">A) Sequentially<br>B) In parallel<br>C) Randomly without training<br>D) In a linear chain only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">26. How are models built in boosting?</p>
+  <p class="options">A) In parallel<br>B) Sequentially<br>C) Without any order<br>D) In a static way</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">27. What additional idea does Random Forest introduce?</p>
+  <p class="options">A) Noise injection only<br>B) Random feature selection<br>C) Error deletion<br>D) High bias only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">28. What does bootstrapping mean?</p>
+  <p class="options">A) No sampling<br>B) Sampling with replacement<br>C) Sampling without replacement<br>D) Data cleaning</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">29. What kind of voting is commonly used in bagging classification?</p>
+  <p class="options">A) Weighted voting only<br>B) Majority voting<br>C) Random voting<br>D) No voting</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">30. What does boosting mainly improve?</p>
+  <p class="options">A) Randomness<br>B) Error correction across models<br>C) Noise only<br>D) Data size</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">31. What shape is commonly used to represent a decision tree?</p>
+  <p class="options">A) Matrix<br>B) Inverted tree structure<br>C) Circle<br>D) Histogram</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">32. Does a decision tree classification problem require a target variable?</p>
+  <p class="options">A) Yes<br>B) No<br>C) Only sometimes in unsupervised learning<br>D) Only in clustering</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">33. What is the main use of a data warehouse?</p>
+  <p class="options">A) Game development<br>B) Analysis and reporting<br>C) Image generation<br>D) Hardware control</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">34. What is the main purpose of XAI?</p>
+  <p class="options">A) Faster training<br>B) Transparency<br>C) Higher storage<br>D) Lower memory</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">35. What is the main difference between an AI agent and an AI assistant?</p>
+  <p class="options">A) Interface color<br>B) Accuracy<br>C) Autonomy<br>D) Model size</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">36. What is the common mistake people make with correlation?</p>
+  <p class="options">A) Assuming it implies causation<br>B) Ignoring variance<br>C) Confusing it with entropy<br>D) Treating it as noise only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">37. Which of the following is a cognitive bias?</p>
+  <p class="options">A) Anchoring bias<br>B) Gini bias<br>C) Entropy bias<br>D) Bootstrap bias</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">38. What defines a good split in a decision tree?</p>
+  <p class="options">A) Higher impurity<br>B) Larger dataset only<br>C) Lower impurity<br>D) Longer runtime</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">39. Why is node size important in a decision tree?</p>
+  <p class="options">A) It affects whether the split is practical and actionable.<br>B) It only changes color in diagrams.<br>C) It matters only for storage.<br>D) It has no effect.</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">40. What is the maximum entropy of a binary split?</p>
+  <p class="options">A) 0<br>B) 0.25<br>C) 0.5<br>D) 1</p>
+  <p class="answer">Answer: D</p>
+  <p class="question">41. What is the maximum Gini impurity of a binary split?</p>
+  <p class="options">A) 0<br>B) 0.25<br>C) 0.5<br>D) 1</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">42. What does induction mean in a decision tree context?</p>
+  <p class="options">A) Learning patterns from data<br>B) Deleting data<br>C) Sorting features alphabetically<br>D) Standardizing variables</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">43. What does a leaf node usually represent?</p>
+  <p class="options">A) A final rule or prediction<br>B) The first split only<br>C) A feature list<br>D) A missing value</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">44. Which technique is commonly used to reduce overfitting in decision trees?</p>
+  <p class="options">A) Scaling<br>B) Tokenization<br>C) Pruning<br>D) Clustering</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">45. What is one important benefit of ensemble methods?</p>
+  <p class="options">A) Lower stability<br>B) Better stability and robustness<br>C) Guaranteed perfect accuracy<br>D) No training needed</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">46. What does bootstrapping create for bagging methods?</p>
+  <p class="options">A) More labels<br>B) More bias<br>C) Less data<br>D) Diversity across training samples</p>
+  <p class="answer">Answer: D</p>
+  <p class="question">47. Random Forest is often preferred because it improves what?</p>
+  <p class="options">A) Accuracy and robustness<br>B) File storage only<br>C) Manual rules only<br>D) Data entry speed only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">48. In which area are decision trees commonly used?</p>
+  <p class="options">A) Fraud detection<br>B) Painting<br>C) Circuit wiring only<br>D) Typing practice</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">49. What must be clear for an AI-based decision system to work effectively?</p>
+  <p class="options">A) Constraints and objectives<br>B) Colors of the dashboard<br>C) Random alternatives only<br>D) File extensions only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">50. Which of the following is an example of anchoring bias?</p>
+  <p class="options">A) Assuming a correlation proves causation<br>B) Ignoring all data<br>C) Using entropy to select a split<br>D) Letting the first quoted price strongly influence the final judgment</p>
+  <p class="answer">Answer: D</p>
+
+  <h3>Online Assessment Questions</h3>
+  <p class="question">1. Which management level mainly handles routine decisions?</p>
+  <p class="options">A) Strategic management<br>B) Tactical management<br>C) Operational management<br>D) Executive governance</p>
+  <p class="answer">Answer: C) Operational management</p>
+  <p class="question">2. Which of the following is an example of an unstructured decision?</p>
+  <p class="options">A) Payroll approval<br>B) Sales entry<br>C) Approving long-term capital investment<br>D) Inventory counting</p>
+  <p class="answer">Answer: C) Approving long-term capital investment</p>
+  <p class="question">3. Which of the following is an example of a semi-structured decision?</p>
+  <p class="options">A) Designing a marketing strategy<br>B) Entering transactions<br>C) Attendance logging<br>D) Printing bills</p>
+  <p class="answer">Answer: A) Designing a marketing strategy</p>
+  <p class="question">4. Which BI component acts as the main central storage system for analysis?</p>
+  <p class="options">A) Spreadsheet<br>B) Data warehouse<br>C) Email server<br>D) Browser cache</p>
+  <p class="answer">Answer: B) Data warehouse</p>
+  <p class="question">5. What do SHAP and LIME mainly do?</p>
+  <p class="options">A) Explain predictions using feature contributions<br>B) Build dashboards only<br>C) Remove missing values<br>D) Increase storage speed</p>
+  <p class="answer">Answer: A) Explain predictions using feature contributions</p>
+  <p class="question">6. Under what condition do AI-based decision systems work best?</p>
+  <p class="options">A) When goals are vague<br>B) When objectives, constraints, and alternatives are clearly specified<br>C) When training data is missing<br>D) When judgment is fully random</p>
+  <p class="answer">Answer: B) Objectives, constraints, and alternatives clearly specified</p>
+  <p class="question">7. Which example best describes an AI agent?</p>
+  <p class="options">A) A chatbot answering one question<br>B) A dashboard showing reports<br>C) A system autonomously designing workflows and executing tasks<br>D) A static FAQ page</p>
+  <p class="answer">Answer: C) Autonomously designing workflows and executing tasks</p>
+  <p class="question">8. Which statement correctly describes correlation?</p>
+  <p class="options">A) It always proves causation.<br>B) It means the relationship is correlational, not automatically causal.<br>C) It means there is no relationship.<br>D) It means one factor is always the reason for the other.</p>
+  <p class="answer">Answer: B) Relationship is correlational, not causal</p>
+  <p class="question">9. Which bias is shown when the first information influences later judgment too strongly?</p>
+  <p class="options">A) Confirmation bias<br>B) Overconfidence bias<br>C) Anchoring bias<br>D) Outcome bias</p>
+  <p class="answer">Answer: C) Anchoring bias</p>
+  <p class="question">10. Which approach is often preferred when transparency is important in AI systems?</p>
+  <p class="options">A) Use a simpler model<br>B) Increase hidden layers only<br>C) Ignore explanations<br>D) Maximize randomness</p>
+  <p class="answer">Answer: A) Use simpler model (transparency)</p>
+
+  <div class="page-break"></div>
+  <h2>Week 8</h2>
+  <h3>Concepts</h3>
+
+  <h4>1. Decision Trees in Python Workflows</h4>
+  <p><strong>A decision tree</strong> is a flowchart-style predictive model. Each split tries to make the resulting groups more pure, meaning the observations inside each group become more similar in class.</p>
+  <p><strong>A targeting problem</strong> means selecting the right customers, cases, or stores when resources are limited. The goal is to maximize results with a limited budget.</p>
+  <p><strong>A pandas DataFrame</strong> is a table-like structure with rows and columns. It is commonly used to prepare and analyze data in Python.</p>
+  <p><strong>scikit-learn</strong> is a Python library used to train models such as Decision Trees and Random Forests.</p>
+
+  <h4>2. Training Data and Features</h4>
+  <p><strong>Train-test split</strong> divides the data into a training part and a testing part. The model learns patterns on the training data and is evaluated on the test data to see whether it generalizes.</p>
+  <p><strong>Features (X)</strong> are the input variables, while <strong>target (Y)</strong> is the output the model tries to predict.</p>
+  <p><strong>DecisionTree in scikit-learn</strong> generally expects numerical data, so text categories must be encoded or removed first.</p>
+  <p><strong>Ordinal encoding</strong> is used when category order matters. For example, low, medium, and high can be converted to 0, 1, and 2.</p>
+
+  <h4>3. Hyperparameters, Impurity, and Pruning</h4>
+  <p><strong>Hyperparameters</strong> are settings chosen before training. Examples include <code>ccp_alpha</code> and <code>min_samples_leaf</code>.</p>
+  <p><strong>Gini impurity</strong> measures how mixed a node is. A value of 0 means the node is pure.</p>
+  <p><strong>ccp_alpha</strong> controls pruning. A value of 0 means no pruning, while higher values create a smaller and simpler tree.</p>
+  <p><strong>Overfitting</strong> happens when a tree memorizes the training data and performs poorly on unseen data.</p>
+  <p><strong>.fit()</strong> is the method used to train the model.</p>
+
+  <h4>4. Model Evaluation</h4>
+  <p><strong>A confusion matrix</strong> compares actual results with predicted results.</p>
+  <p><strong>True Positive</strong> means a positive case was predicted correctly. <strong>True Negative</strong> means a negative case was predicted correctly. <strong>False Positive</strong> is a false alarm. <strong>False Negative</strong> is a missed positive case.</p>
+  <p><strong>Recall or sensitivity</strong> measures how many actual positives were found. <strong>Specificity</strong> measures how well the model avoids false positives. <strong>Precision</strong> measures how many predicted positives are actually correct.</p>
+  <p><strong>ROC curve</strong> plots True Positive Rate against False Positive Rate. <strong>AUC</strong> summarizes ROC performance, where 0.5 means random and 1.0 means perfect.</p>
+  <p><strong>PR curve</strong> plots precision against recall and is especially useful for imbalanced data.</p>
+
+  <h4>5. Imbalanced Data and Multi-Class Handling</h4>
+  <p><strong>Imbalanced data</strong> means one class is much larger than another. This can make the model biased toward the majority class.</p>
+  <p><strong>SMOTE</strong> creates synthetic minority-class examples to balance the training data. It should be applied only to the training set, not to the test set.</p>
+  <p><strong>LabelBinarizer</strong> converts multi-class targets into multiple binary forms so metrics can be computed more easily.</p>
+  <p><strong>Micro averaging</strong> gives equal importance to all predictions. <strong>Macro averaging</strong> gives equal importance to all classes.</p>
+
+  <h4>6. Random Forest and Cross-Validation</h4>
+  <p><strong>Random Forest</strong> combines many trees to improve stability and reduce sensitivity to one specific split.</p>
+  <p><strong>Cross-validation</strong> uses repeated train-test splits to produce a more reliable estimate of model performance.</p>
+
+  <p class="example"><strong>Example:</strong> If the dataset has 99 non-fraud cases and 1 fraud case, a model may look accurate by always predicting non-fraud. That is why recall, precision, PR curves, and SMOTE become important.</p>
+
+  <h3>MCQs</h3>
+  <p class="question">1. What is the main goal of a decision tree?</p>
+  <p class="options">A) To store data<br>B) To create rules for prediction<br>C) To sort data only<br>D) To visualize data only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. What does a Gini impurity value of 0 mean?</p>
+  <p class="options">A) Mixed data<br>B) A pure node<br>C) A random split<br>D) An error state</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">3. Why is train-test split used?</p>
+  <p class="options">A) To increase data size<br>B) To avoid overfitting and test generalization<br>C) To remove all noise<br>D) To encode data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">4. Which of the following is a hyperparameter?</p>
+  <p class="options">A) y_train<br>B) ccp_alpha<br>C) Prediction result<br>D) Accuracy score</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. What does <code>ccp_alpha = 0</code> mean?</p>
+  <p class="options">A) Fully pruned tree<br>B) No pruning<br>C) No training<br>D) No split allowed</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. What does a false positive mean?</p>
+  <p class="options">A) A wrong negative prediction<br>B) A wrong positive prediction<br>C) A correct positive prediction<br>D) A correct negative prediction</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">7. What does recall measure?</p>
+  <p class="options">A) Accuracy only<br>B) How many true positives are found<br>C) How many true negatives are found<br>D) Total error count</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. What does specificity focus on?</p>
+  <p class="options">A) True positives<br>B) True negatives<br>C) False negatives only<br>D) Precision only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. What is the formula for precision?</p>
+  <p class="options">A) TP / (TP + FN)<br>B) TP / (TP + FP)<br>C) TN / (TN + FP)<br>D) FN / (TP + TN)</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What does an AUC of 0.5 indicate?</p>
+  <p class="options">A) Perfect performance<br>B) Random performance<br>C) Overfitting<br>D) A coding error</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">11. What is SMOTE used for?</p>
+  <p class="options">A) Encoding categories<br>B) Balancing imbalanced data<br>C) Splitting data<br>D) Training the final model only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">12. On which data should SMOTE be applied?</p>
+  <p class="options">A) The test set only<br>B) The training set only<br>C) The whole dataset at once<br>D) The target column only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">13. For what type of categories is ordinal encoding most suitable?</p>
+  <p class="options">A) Unordered categories only<br>B) Ordered categories<br>C) Images<br>D) Pure numeric variables</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">14. What is a Random Forest?</p>
+  <p class="options">A) A single decision tree<br>B) A collection of many trees<br>C) A linear model<br>D) A clustering algorithm</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">15. What does the ROC curve plot?</p>
+  <p class="options">A) Precision against Recall<br>B) True Positive Rate against False Positive Rate<br>C) Accuracy against Loss<br>D) Error against Time</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">16. For which type of dataset is the PR curve especially useful?</p>
+  <p class="options">A) Balanced data only<br>B) Imbalanced data<br>C) Small data only<br>D) Image data only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">17. What does overfitting mean?</p>
+  <p class="options">A) A model is too simple.<br>B) A model memorizes training data.<br>C) A model has no training.<br>D) A model always generalizes perfectly.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">18. What does underfitting mean?</p>
+  <p class="options">A) The model is too complex.<br>B) The model is too simple.<br>C) The model is perfect.<br>D) The model is random.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">19. What is LabelBinarizer used for?</p>
+  <p class="options">A) Scaling features<br>B) Encoding multi-class labels<br>C) Splitting data<br>D) Cleaning missing values</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">20. What does macro averaging do?</p>
+  <p class="options">A) Treats all samples equally<br>B) Treats all classes equally<br>C) Treats all features equally<br>D) Ignores classes</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">21. What does micro averaging do?</p>
+  <p class="options">A) Treats all classes equally<br>B) Treats all predictions equally<br>C) Treats only minority class equally<br>D) Ignores sample count</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">22. Decision trees used for classification are what kind of learning method?</p>
+  <p class="options">A) Unsupervised<br>B) Supervised<br>C) Reinforcement<br>D) Self-organizing only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">23. What does the <code>.fit()</code> method do?</p>
+  <p class="options">A) Predicts outputs<br>B) Trains the model<br>C) Splits the data<br>D) Evaluates the result</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">24. What is the test set used for?</p>
+  <p class="options">A) Training the model<br>B) Evaluating performance<br>C) Encoding features<br>D) Balancing classes</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">25. Which four terms appear in a confusion matrix?</p>
+  <p class="options">A) TP<br>B) FP<br>C) TN<br>D) FN</p>
+  <p class="answer">Answer: A, B, C, D</p>
+  <p class="question">26. What does high specificity usually reduce?</p>
+  <p class="options">A) True positives<br>B) False positives<br>C) False negatives<br>D) True negatives</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">27. What does high recall usually reduce?</p>
+  <p class="options">A) False positives<br>B) False negatives<br>C) True negatives<br>D) Total observations</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">28. What is the root node in a decision tree?</p>
+  <p class="options">A) The last node<br>B) The first split or starting point<br>C) The leaf node only<br>D) The output label</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">29. What is a leaf node in a decision tree?</p>
+  <p class="options">A) A split node<br>B) A final prediction node<br>C) The root node<br>D) An input variable</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">30. What usually happens when <code>min_samples_leaf</code> is set high?</p>
+  <p class="options">A) The tree becomes more complex.<br>B) The tree becomes simpler.<br>C) The model stops training.<br>D) The tree always becomes deeper.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">31. What is Gini impurity mainly used for?</p>
+  <p class="options">A) Encoding text<br>B) Choosing splits<br>C) Scaling values<br>D) Plotting curves</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">32. Decision trees can be used for which tasks?</p>
+  <p class="options">A) Regression only<br>B) Classification only<br>C) Both classification and regression<br>D) Neither</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">33. What is the AUC of a perfect model?</p>
+  <p class="options">A) 0<br>B) 0.5<br>C) 1<br>D) 2</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">34. When does data leakage occur?</p>
+  <p class="options">A) When test data influences training<br>B) When the data is split correctly<br>C) When categories are encoded<br>D) When features are scaled</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">35. What does a feature mean in machine learning?</p>
+  <p class="options">A) Output variable<br>B) Input variable<br>C) Error term<br>D) Label encoding</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">36. What does a target variable mean?</p>
+  <p class="options">A) Input variable<br>B) Output variable<br>C) Noise only<br>D) Feature group only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">37. What does an imbalanced dataset mean?</p>
+  <p class="options">A) Equal-sized classes<br>B) Unequal-sized classes<br>C) Clean data only<br>D) Purely numeric data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">38. What does Random Forest usually improve?</p>
+  <p class="options">A) Speed only<br>B) Stability<br>C) File size only<br>D) Number of labels only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">39. What does cross-validation provide?</p>
+  <p class="options">A) Faster training only<br>B) A better performance estimate<br>C) Less data<br>D) Random output</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">40. If precision is high, what is usually true?</p>
+  <p class="options">A) There are few false positives.<br>B) There are few false negatives.<br>C) There are few true negatives.<br>D) There are few true positives.</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">41. If recall is high, what is usually true?</p>
+  <p class="options">A) There are few false positives.<br>B) There are few false negatives.<br>C) There are few true negatives.<br>D) There are few total samples.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">42. Which point is ideal on a ROC curve?</p>
+  <p class="options">A) Bottom-left<br>B) Top-left<br>C) Top-right<br>D) Center</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">43. Which point is ideal on a PR curve?</p>
+  <p class="options">A) Bottom-left<br>B) Top-right<br>C) Center<br>D) Bottom-right</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">44. Decision tree splits are mainly based on what?</p>
+  <p class="options">A) Randomness only<br>B) Impurity reduction<br>C) File size<br>D) Time order only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">45. On which data should final model evaluation be based?</p>
+  <p class="options">A) Training data<br>B) Test data<br>C) Random data only<br>D) No data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">46. What usually must happen to categorical data before using CART in scikit-learn?</p>
+  <p class="options">A) It must always be removed.<br>B) It must be converted to numeric form.<br>C) It must be ignored.<br>D) It must be randomized.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">47. What does SMOTE create?</p>
+  <p class="options">A) Random noise<br>B) Synthetic minority samples<br>C) New labels only<br>D) New splits only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">48. What usually happens when tree depth increases a lot?</p>
+  <p class="options">A) Overfitting risk increases<br>B) Underfitting increases<br>C) Nothing changes<br>D) Accuracy always improves on test data</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">49. What does pruning mainly reduce?</p>
+  <p class="options">A) Data volume<br>B) Model complexity<br>C) Number of labels<br>D) Number of observations</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">50. What does the best model choice depend on most strongly?</p>
+  <p class="options">A) Accuracy only<br>B) Business cost and context<br>C) Data size only<br>D) Number of features only</p>
+  <p class="answer">Answer: B</p>
+
+  <h3>Online Assessment Questions</h3>
+  <p class="question">1. What is a primary limitation of deep feedforward networks?</p>
+  <p class="options">A) Overfitting only<br>B) Vanishing gradient<br>C) Slow training only<br>D) No output layer</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. CNNs are best suited for which type of data?</p>
+  <p class="options">A) Text only<br>B) Images<br>C) Time series only<br>D) Graphs only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">3. What is the key idea behind transformers?</p>
+  <p class="options">A) Convolution only<br>B) Recurrence only<br>C) Self-attention<br>D) Clustering</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">4. What does positional encoding mainly help with?</p>
+  <p class="options">A) Speed only<br>B) Preserving the order of words<br>C) Accuracy only<br>D) Loss calculation only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. What does fine-tuning mean?</p>
+  <p class="options">A) Training a model from scratch<br>B) Adapting a pretrained model<br>C) Removing layers only<br>D) Testing only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. What does the hidden state in an RNN do?</p>
+  <p class="options">A) It resets every time without memory.<br>B) It stores memory across sequence steps.<br>C) It deletes information.<br>D) It has no purpose.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">7. In which setting is an encoder-decoder architecture commonly used?</p>
+  <p class="options">A) CNN-only image tasks<br>B) Sequence-to-sequence tasks<br>C) Clustering only<br>D) Regression only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. What advantage do RNNs have over basic feedforward networks for sequences?</p>
+  <p class="options">A) Lower memory use only<br>B) Sequence memory<br>C) Smaller file size only<br>D) No weights</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. What do shared weights in an RNN mean?</p>
+  <p class="options">A) Different weights at every step<br>B) The same weights are reused across steps<br>C) Random weights are used<br>D) No weights are used</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What does the output gate in an LSTM control?</p>
+  <p class="options">A) Input value only<br>B) Exposure of memory to the output<br>C) Forgetting only<br>D) Training speed</p>
+  <p class="answer">Answer: B</p>
+
+  <div class="page-break"></div>
+  <h2>Week 9</h2>
+  <h3>Concepts</h3>
+
+  <h4>1. Risk Management Process</h4>
+  <p><strong>Risk management</strong> is the process of identifying risks, assessing them, and then controlling or reducing them. It is a structured way to protect systems from failure, harm, and loss.</p>
+  <p><strong>Risk identification</strong> means finding possible threats such as data leakage, model failure, bias, or security attacks.</p>
+  <p><strong>Risk assessment</strong> means estimating how likely a threat is and how serious the impact would be.</p>
+  <p><strong>Risk control or mitigation</strong> means taking actions to reduce the probability or impact of those risks.</p>
+
+  <h4>2. Quantitative Risk Assessment</h4>
+  <p><strong>Quantitative risk assessment</strong> uses numbers rather than only qualitative judgment.</p>
+  <p>A common framework treats risk as a function of <strong>threat probability</strong>, <strong>success probability of attack</strong>, <strong>exposure of assets</strong>, and <strong>asset value</strong>.</p>
+  <p><strong>Measurement error</strong> is the uncertainty or inaccuracy in estimating these values.</p>
+
+  <h4>3. Levels of Risk Assessment</h4>
+  <p>Risk can be assessed at the <strong>individual level</strong>, the <strong>organizational level</strong>, or the <strong>national level</strong>. The same technical failure may have very different consequences at each level.</p>
+  <p>A measurable impact of AI system failure is often <strong>financial cost</strong>, such as the cost created by a wrong automated decision.</p>
+
+  <h4>4. Threat Categories and ML Attacks</h4>
+  <p>Threats to information systems can be broadly classified as <strong>malicious</strong> or <strong>unintentional</strong>.</p>
+  <p><strong>Malicious threats</strong> are intentional attacks. <strong>Unintentional threats</strong> come from accidents, mistakes, bugs, or poor design.</p>
+  <p><strong>Data poisoning</strong> is a malicious attack where the training data is corrupted so the model learns wrong patterns.</p>
+  <p><strong>Adversarial input attacks</strong> slightly modify inputs to cause wrong predictions, even though the changes may be hard for humans to notice.</p>
+
+  <h4>5. Environmental Concerns and Bias</h4>
+  <p>Large AI models consume a great deal of energy during training and deployment. This creates environmental concern because of <strong>high electricity use and carbon emissions</strong>.</p>
+  <p>A common criticism of large-scale AI systems is that the training data may not represent the diversity of the real population. This can lead to <strong>bias</strong> and unfair outputs.</p>
+
+  <p class="example"><strong>Example:</strong> If a face recognition model is trained mostly on one group of faces, it may perform worse on underrepresented groups. This becomes a fairness and risk management problem at the same time.</p>
+
+  <h3>MCQs</h3>
+  <p class="question">1. Which sequence best represents the typical risk management process?</p>
+  <p class="options">A) Risk control, risk identification, risk assessment<br>B) Risk identification, risk assessment, risk control<br>C) Risk assessment, risk mitigation, risk identification<br>D) Risk monitoring, risk identification, risk response</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. What does risk identification mean?</p>
+  <p class="options">A) Reducing risks<br>B) Finding risks<br>C) Measuring revenue<br>D) Ignoring threats</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">3. What does risk assessment mainly focus on?</p>
+  <p class="options">A) Detection only<br>B) Probability and impact<br>C) Coding style<br>D) Hardware brand</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">4. What does quantitative risk assessment mainly use?</p>
+  <p class="options">A) Opinions only<br>B) Numbers and measurable values<br>C) Guessing only<br>D) Rules without data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. Which factors commonly appear in a quantitative risk model?</p>
+  <p class="options">A) Only cost<br>B) Only probability<br>C) Threat probability, success probability, exposure, and asset value<br>D) Time only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">6. What does measurement error mean in risk modeling?</p>
+  <p class="options">A) A coding bug only<br>B) A wrong screen output only<br>C) Uncertainty in estimated values<br>D) A hardware failure only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">7. Which levels are commonly used for AI risk assessment?</p>
+  <p class="options">A) Technical only<br>B) Individual, organizational, and national<br>C) Financial only<br>D) Social only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. Which of the following is a measurable impact of AI failure?</p>
+  <p class="options">A) Loss of trust only<br>B) Psychological stress only<br>C) Financial cost<br>D) Reputation only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">9. Threats are often classified into which two categories?</p>
+  <p class="options">A) Internal and external<br>B) Malicious and unintentional<br>C) Logical and physical<br>D) Manual and automatic</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What is a malicious threat?</p>
+  <p class="options">A) An accident only<br>B) An intentional attack<br>C) A random error only<br>D) A natural issue only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">11. What is an unintentional threat?</p>
+  <p class="options">A) A planned attack<br>B) Human error or accident<br>C) Malware only<br>D) A hack only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">12. Which of the following is an example of a malicious ML attack?</p>
+  <p class="options">A) Overfitting<br>B) Data poisoning<br>C) Low accuracy<br>D) Normal noise</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">13. During which phase does data poisoning mainly happen?</p>
+  <p class="options">A) During testing only<br>B) During training<br>C) During deployment only<br>D) During storage only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">14. What is the main goal of an adversarial attack?</p>
+  <p class="options">A) To improve accuracy<br>B) To reduce cost<br>C) To cause a wrong prediction<br>D) To increase speed</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">15. How does an adversarial input attack usually work?</p>
+  <p class="options">A) By changing labels only<br>B) By modifying inputs to fool the model<br>C) By removing all data<br>D) By adding features to the database only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">16. What is a major environmental concern related to large AI systems?</p>
+  <p class="options">A) Memory usage only<br>B) Energy consumption and carbon emissions<br>C) Storage location only<br>D) Display quality only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">17. When does AI bias commonly occur?</p>
+  <p class="options">A) When data is large<br>B) When data lacks diversity<br>C) When the model is small<br>D) When hardware fails</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">18. What can AI bias lead to?</p>
+  <p class="options">A) Faster models<br>B) Fair decisions<br>C) Unfair outcomes<br>D) Lower cost only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">19. What does risk control mean?</p>
+  <p class="options">A) Ignoring the risk<br>B) Reducing or managing the risk<br>C) Increasing the risk<br>D) Measuring risk only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">20. In a risk model, what does exposure refer to?</p>
+  <p class="options">A) Attack type only<br>B) The degree to which an asset is vulnerable or exposed<br>C) Cost only<br>D) Speed only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">21. What does asset value mean in risk assessment?</p>
+  <p class="options">A) The coding language used<br>B) The importance or worth of the asset<br>C) The screen size only<br>D) The model type only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">22. What does success probability mean in a risk formula?</p>
+  <p class="options">A) Chance that the attack works<br>B) Chance that the company grows<br>C) Cost of the attack<br>D) Time required for training</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">23. What does threat probability mean?</p>
+  <p class="options">A) Damage amount only<br>B) Chance that the threat occurs<br>C) Cost only<br>D) Model accuracy only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">24. What may incorrect estimation of risk parameters create?</p>
+  <p class="options">A) Better protection automatically<br>B) Measurement error<br>C) Faster systems<br>D) Less cost automatically</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">25. Organizational risk mainly affects whom or what?</p>
+  <p class="options">A) One individual only<br>B) The company or organization<br>C) The country only<br>D) A single file only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">26. National risk mainly affects what?</p>
+  <p class="options">A) One company only<br>B) One individual only<br>C) A country or nation<br>D) One model only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">27. Which of the following is an indirect impact of AI failure?</p>
+  <p class="options">A) Financial cost<br>B) Revenue loss only<br>C) Loss of trust<br>D) Direct compensation cost</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">28. Which of the following is a direct impact of AI failure?</p>
+  <p class="options">A) Psychological stress only<br>B) Reputational damage only<br>C) Financial loss<br>D) Trust decline only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">29. Which of the following is an example of a malicious attack?</p>
+  <p class="options">A) A typo<br>B) Data poisoning<br>C) An accidental crash<br>D) A bug caused by oversight</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">30. Which of the following is an example of an unintentional threat?</p>
+  <p class="options">A) Hacking<br>B) A coding error<br>C) Malware injection<br>D) An adversarial attack</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">31. What is an adversarial example?</p>
+  <p class="options">A) A clean input<br>B) A slightly modified input that fools the model<br>C) A random dataset<br>D) A normal label only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">32. High AI energy use contributes to what?</p>
+  <p class="options">A) Faster training only<br>B) Carbon emissions<br>C) Less data use<br>D) Higher fairness automatically</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">33. AI bias mainly comes from what source?</p>
+  <p class="options">A) Hardware only<br>B) Training data<br>C) CPU brand only<br>D) GPU memory only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">34. Which of the following is an example of risk mitigation?</p>
+  <p class="options">A) Ignoring threats<br>B) Applying prevention and protection measures<br>C) Removing the entire system immediately<br>D) Deleting all data without analysis</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">35. Which of the following is not part of the risk management process?</p>
+  <p class="options">A) Identification<br>B) Assessment<br>C) Control<br>D) Coding style selection</p>
+  <p class="answer">Answer: D</p>
+  <p class="question">36. What should risk assessment rely on as much as possible?</p>
+  <p class="options">A) Luck<br>B) Data and evidence<br>C) Random choice<br>D) Guesswork only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">37. What usually happens when exposure increases?</p>
+  <p class="options">A) Safety increases<br>B) Risk increases<br>C) Accuracy increases automatically<br>D) Speed increases automatically</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">38. What does high asset value usually imply?</p>
+  <p class="options">A) Lower impact<br>B) Higher possible damage<br>C) No risk<br>D) Smaller losses</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">39. Adversarial attacks are best described as what?</p>
+  <p class="options">A) Random accidents<br>B) Intentional attacks<br>C) Natural failures<br>D) Hardware issues only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">40. What does data poisoning mainly target?</p>
+  <p class="options">A) Output display only<br>B) Training data<br>C) Hardware only<br>D) File storage only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">41. When is risk typically highest?</p>
+  <p class="options">A) Low probability and low impact<br>B) Low value and low exposure<br>C) High probability and high impact<br>D) Low exposure only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">42. Which of the following is part of a common risk formula?</p>
+  <p class="options">A) CPU type<br>B) Exposure<br>C) RAM size<br>D) GPU brand</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">43. What does bias mainly affect in AI systems?</p>
+  <p class="options">A) Hardware<br>B) Fairness<br>C) Screen brightness<br>D) Storage speed</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">44. Why is AI failure cost considered measurable?</p>
+  <p class="options">A) Because it is always emotional<br>B) Because it can be expressed financially<br>C) Because it is always hidden<br>D) Because it has no business impact</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">45. What does the term threat mean?</p>
+  <p class="options">A) Protection<br>B) Danger or possible harm<br>C) Safety feature<br>D) Optional add-on</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">46. Which of the following is an unintentional threat?</p>
+  <p class="options">A) Malware injection<br>B) Human error<br>C) Coordinated attack<br>D) Hacking attempt</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">47. Which of the following is a malicious threat?</p>
+  <p class="options">A) Mistake<br>B) Intentional attack<br>C) Software typo only<br>D) Accidental crash</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">48. What does risk control try to reduce?</p>
+  <p class="options">A) Accuracy<br>B) Risk<br>C) Data size<br>D) Feature count</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">49. What kind of system can AI bias create?</p>
+  <p class="options">A) A fair system<br>B) An unfair system<br>C) A faster system only<br>D) A smaller system only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">50. What is the main goal of risk management?</p>
+  <p class="options">A) To increase risk<br>B) To ignore risk<br>C) To reduce risk<br>D) To hide risk</p>
+  <p class="answer">Answer: C</p>
+
+  <h3>Online Assessment Questions</h3>
+  <p class="question">1. Which of the following best represents the typical process of risk management?</p>
+  <p class="options">A) Risk control, risk identification, risk assessment<br>B) Risk identification, risk assessment, risk control<br>C) Risk assessment, risk mitigation, risk identification<br>D) Risk monitoring, risk identification, risk response</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. A quantitative risk assessment framework models risk as a function of which factors?</p>
+  <p class="options">A) Organizational culture, governance strength, and technology maturity<br>B) Regulatory pressure, innovation capability, and investment cost<br>C) Threat probability, success probability of attack, exposure of assets, and asset value<br>D) Data volume, model complexity, and infrastructure capacity</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">3. In risk measurement models, what does measurement error refer to?</p>
+  <p class="options">A) The probability that a threat will occur<br>B) The uncertainty or inaccuracy in estimating risk parameters<br>C) The financial loss due to an attack<br>D) The technical failure of a risk detection system</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">4. At which levels can AI-enabled risk assessments typically be conducted?</p>
+  <p class="options">A) Technical, financial, and operational<br>B) Individual, organizational, and national<br>C) Algorithmic, computational, and infrastructural<br>D) Ethical, regulatory, and cultural</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. Which of the following is a tangible and measurable impact of AI system failure?</p>
+  <p class="options">A) Loss of trust in technology<br>B) Psychological distress caused by system errors<br>C) Cost resulting from incorrect automated decisions<br>D) Long-term reputational damage</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">6. Threats to information systems can broadly be classified into which two categories?</p>
+  <p class="options">A) Strategic and operational<br>B) Internal and external<br>C) Malicious and unintentional<br>D) Physical and digital</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">7. Which of the following is an example of a malicious attack on machine learning systems?</p>
+  <p class="options">A) Model overfitting during training<br>B) Data poisoning during the training phase<br>C) Poor feature selection in model design<br>D) Insufficient computing resources</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. What does an adversarial input attack primarily aim to do?</p>
+  <p class="options">A) Increase computational efficiency<br>B) Improve model generalization<br>C) Manipulate inputs to cause incorrect predictions<br>D) Reduce model bias during training</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">9. Why do large AI models raise environmental concerns?</p>
+  <p class="options">A) High licensing costs only<br>B) Extensive energy consumption and carbon emissions during training<br>C) Lack of regulation only<br>D) Limited training data only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What is a common criticism of large AI models trained on internet-scale data?</p>
+  <p class="options">A) They rely only on proprietary datasets.<br>B) Their training data may not represent the diversity of global populations.<br>C) They cannot process structured data.<br>D) They cannot learn language patterns.</p>
+  <p class="answer">Answer: B</p>
+
+  <div class="page-break"></div>
+  <h2>Week 10</h2>
+  <h3>Concepts</h3>
+
+  <h4>1. Clustering and Store Segmentation</h4>
+  <p><strong>Clustering</strong> is an unsupervised learning method that groups similar observations together without pre-labeled classes.</p>
+  <p><strong>Store segmentation</strong> applies clustering to stores instead of customers so that similar stores can be managed using similar strategies.</p>
+  <p><strong>Cross-sectional data</strong> is data collected at one point in time across many units. This is important because clustering should not confuse time-based change with true similarity.</p>
+  <p><strong>Cluster profiling</strong> means interpreting the meaning of each cluster by examining average values and business characteristics.</p>
+
+  <h4>2. K-Means and Data Preparation</h4>
+  <p><strong>K-Means</strong> partitions observations into K clusters based on distance from centroids. It works best when features are scaled and K is chosen carefully.</p>
+  <p><strong>Multicollinearity</strong> means variables are highly correlated and duplicate information. Redundant variables can distort clustering.</p>
+  <p><strong>Scaling</strong> using a method such as StandardScaler is important because K-Means is distance-based, and large numeric values can dominate the result.</p>
+  <p><strong>Elbow method</strong> plots SSE against K. The bend or elbow point suggests a good number of clusters.</p>
+  <p><strong>SSE</strong>, or Sum of Squared Errors, measures how tight the clusters are. Lower SSE generally means better clustering.</p>
+
+  <h4>3. RFM Analysis and Customer Value</h4>
+  <p><strong>RFM analysis</strong> segments customers using Recency, Frequency, and Monetary value.</p>
+  <p><strong>Recency</strong> means how recently the customer purchased. Lower time since the last purchase is better and often the strongest indicator of current engagement.</p>
+  <p><strong>Frequency</strong> measures how often the customer purchases. High frequency often signals loyalty.</p>
+  <p><strong>Monetary</strong> measures how much the customer spent. It indicates revenue contribution.</p>
+  <p><strong>CLV</strong> is customer lifetime value, the predicted future value of a customer. RFM helps estimate it.</p>
+
+  <h4>4. Customer Segment Meanings</h4>
+  <p><strong>True Friends</strong> have high recency quality, high frequency, and high monetary value. They are strong loyal customers.</p>
+  <p><strong>Butterflies</strong> spend a lot but are not very frequent. The firm should maximize short-term profit from them.</p>
+  <p><strong>Barnacles</strong> buy often but spend little. The strategy is to increase their average spend.</p>
+  <p><strong>Strangers</strong> have low values across RFM and often do not deserve major investment.</p>
+
+  <h4>5. Data Cleaning and Aggregation</h4>
+  <p><strong>Data cleaning</strong> removes errors such as impossible or negative values that should not exist in standard purchases.</p>
+  <p><strong>Returns</strong> are treated as negative transactions so they reduce total revenue.</p>
+  <p><strong>Pivot tables</strong> are used to aggregate RFM values: SUM for monetary, COUNT for frequency, and MAX date for recency calculations.</p>
+  <p><strong>Scaling</strong> can also convert raw RFM values into a common score range such as 1 to 10. <strong>Reverse scaling</strong> is often used for recency because lower days since purchase should produce a higher score.</p>
+  <p><strong>NTILE(n)</strong> divides data into equal-sized groups such as quintiles or deciles.</p>
+  <p><strong>fit_predict()</strong> trains a model and returns cluster labels in one step.</p>
+  <p><strong>3D visualization</strong> is useful in RFM because there are three main features to display.</p>
+
+  <h4>6. LLM and Voice Assistant Topics in Online Assessment</h4>
+  <p>This week’s online assessment also touches separate AI application topics such as <strong>LLMs</strong>, <strong>RAG</strong>, <strong>prompt injection</strong>, <strong>vector similarity</strong>, <strong>voice assistants</strong>, and <strong>agentic workflows</strong>. These are included in the assessment section exactly as provided.</p>
+
+  <p class="example"><strong>Example:</strong> If a customer bought very recently, buys often, and spends a lot, the customer may be tagged as a True Friend. If another customer spends a lot once in a while, that customer fits better in the Butterfly segment.</p>
+
+  <h3>MCQs</h3>
+  <p class="question">1. What is clustering?</p>
+  <p class="options">A) Supervised learning<br>B) Grouping similar data points<br>C) Regression technique<br>D) Classification only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. Clustering belongs to which type of learning?</p>
+  <p class="options">A) Supervised learning<br>B) Unsupervised learning<br>C) Semi-supervised learning<br>D) Reinforcement learning</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">3. Store segmentation focuses on grouping which entities?</p>
+  <p class="options">A) Customers<br>B) Products<br>C) Stores<br>D) Employees</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">4. What is cross-sectional data?</p>
+  <p class="options">A) Data collected over many time periods for one case<br>B) Data collected at one point in time across many units<br>C) Random simulated data<br>D) Forecasted data only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. Why might analysts reduce a long history into a short common window before clustering?</p>
+  <p class="options">A) To improve keyboard speed<br>B) To reduce storage only<br>C) To remove time variance from the comparison<br>D) To avoid plotting</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">6. What does cluster profiling mainly help with?</p>
+  <p class="options">A) Reducing data size<br>B) Interpreting clusters in business terms<br>C) Scaling data only<br>D) Training labels</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">7. K-Means mainly uses what to assign clusters?</p>
+  <p class="options">A) Probability only<br>B) Distance from centroids<br>C) Decision rules only<br>D) Linguistic features</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. What does multicollinearity mean?</p>
+  <p class="options">A) Missing data<br>B) Highly correlated variables<br>C) Noisy labels only<br>D) Clean data only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. Why is scaling important in K-Means?</p>
+  <p class="options">A) Because the dataset is large<br>B) Because K-Means is distance-based<br>C) Because it removes labels<br>D) Because it stores data better</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What does the elbow method help find?</p>
+  <p class="options">A) The best model language<br>B) The optimal K value<br>C) The best feature name<br>D) The best dataset source</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">11. What does SSE measure in clustering?</p>
+  <p class="options">A) Accuracy<br>B) Cluster tightness<br>C) Speed only<br>D) Storage only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">12. What does lower SSE usually indicate?</p>
+  <p class="options">A) Worse clusters<br>B) Better clusters<br>C) No change<br>D) Random assignment</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">13. What does recency measure in RFM analysis?</p>
+  <p class="options">A) Spending amount<br>B) Time since last purchase<br>C) Purchase frequency only<br>D) Profit margin</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">14. What does frequency measure in RFM analysis?</p>
+  <p class="options">A) Time only<br>B) Number of purchases<br>C) Profit only<br>D) Loss only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">15. What does monetary measure in RFM analysis?</p>
+  <p class="options">A) Time<br>B) Count<br>C) Spending<br>D) Profit margin only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">16. Which RFM factor is often the strongest predictor of engagement?</p>
+  <p class="options">A) Monetary<br>B) Frequency<br>C) Recency<br>D) CLV</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">17. Who are True Friends in RFM segmentation?</p>
+  <p class="options">A) Customers with low RFM values<br>B) Customers with high RFM values<br>C) Customers with only high monetary value<br>D) Customers with only high frequency</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">18. Who are Butterflies?</p>
+  <p class="options">A) Highly loyal low spenders<br>B) High spenders with low frequency<br>C) Low spenders only<br>D) Customers with no activity</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">19. Who are Barnacles?</p>
+  <p class="options">A) High spenders only<br>B) Low loyalty premium buyers<br>C) Frequent but low-spend customers<br>D) New users only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">20. Who are Strangers?</p>
+  <p class="options">A) High-value customers<br>B) Medium-value customers<br>C) Low-value customers across RFM<br>D) Loyal premium customers</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">21. What does data cleaning mainly remove?</p>
+  <p class="options">A) Useful features<br>B) Errors and invalid values<br>C) Models<br>D) Labels</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">22. In ordinary sales data, what may a negative price indicate?</p>
+  <p class="options">A) Profit<br>B) An error or return effect<br>C) Tax only<br>D) A new label</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">23. How are returns usually treated in transactional analysis?</p>
+  <p class="options">A) Removed completely<br>B) Counted as positive sales<br>C) Recorded as negative values<br>D) Ignored permanently</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">24. In a pivot table, what does SUM usually give for RFM?</p>
+  <p class="options">A) Frequency<br>B) Recency<br>C) Monetary value<br>D) Average order gap</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">25. In a pivot table, what does COUNT usually give for RFM?</p>
+  <p class="options">A) Recency<br>B) Frequency<br>C) Monetary value<br>D) Average value</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">26. In a pivot table, what does MAX date usually help identify?</p>
+  <p class="options">A) First purchase<br>B) Last purchase date<br>C) Frequency only<br>D) Spending only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">27. What is the main purpose of scaling scores in RFM?</p>
+  <p class="options">A) To create a larger range<br>B) To place values on a common scale<br>C) To randomize records<br>D) To create binary variables</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">28. Why is reverse scaling used for recency?</p>
+  <p class="options">A) Because frequency is negative<br>B) Because lower recency should get a better score<br>C) Because monetary must be removed<br>D) Because CLV is always negative</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">29. What does NTILE(n) do?</p>
+  <p class="options">A) Creates random groups<br>B) Divides data into equal groups<br>C) Creates unequal groups<br>D) Deletes outliers</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">30. What does <code>fit_predict()</code> do?</p>
+  <p class="options">A) Only trains<br>B) Only predicts<br>C) Trains and predicts cluster labels<br>D) Does nothing</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">31. Why is a 3D plot useful in RFM analysis?</p>
+  <p class="options">A) Because there are 2 features<br>B) Because there are 3 main features<br>C) Because there are 4 dimensions<br>D) Because it always improves accuracy</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">32. What usually happens to SSE as K increases?</p>
+  <p class="options">A) It increases<br>B) It decreases<br>C) It stays fixed<br>D) It becomes random</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">33. What can happen if K is set too large?</p>
+  <p class="options">A) Underfitting only<br>B) Over-segmentation or overfitting-like fragmentation<br>C) No clusters form<br>D) The data disappears</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">34. Does K-Means require labeled target data?</p>
+  <p class="options">A) Yes<br>B) No<br>C) Only for classification<br>D) Only for regression</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">35. What is a cluster center in K-Means?</p>
+  <p class="options">A) Median only<br>B) Mean point or centroid<br>C) Mode only<br>D) Sum of values</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">36. Which distance is commonly used in K-Means?</p>
+  <p class="options">A) Manhattan distance<br>B) Euclidean distance<br>C) Hamming distance<br>D) Cosine distance only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">37. What does CLV predict?</p>
+  <p class="options">A) Past value only<br>B) Future customer value<br>C) Present stock only<br>D) None</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">38. RFM analysis is mainly based on what kind of data?</p>
+  <p class="options">A) Demographics only<br>B) Transactions<br>C) Weather data<br>D) Surveys only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">39. What does high frequency usually signal?</p>
+  <p class="options">A) Low loyalty<br>B) High loyalty<br>C) Low spending automatically<br>D) No meaningful trend</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">40. What does low recency usually mean?</p>
+  <p class="options">A) The customer bought recently<br>B) The customer bought long ago<br>C) The customer never bought<br>D) The customer spent a lot</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">41. What does feature reduction help with before clustering?</p>
+  <p class="options">A) Increasing redundancy<br>B) Removing duplicate information<br>C) Adding noise<br>D) Slowing the algorithm</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">42. Which method is associated with grouping similar stores in this week?</p>
+  <p class="options">A) Regression<br>B) Clustering<br>C) Classification only<br>D) NLP</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">43. In store segmentation, what is the unit of analysis?</p>
+  <p class="options">A) Customer<br>B) Store<br>C) Product<br>D) Time period only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">44. What does cluster profiling give to a cluster?</p>
+  <p class="options">A) Accuracy only<br>B) Business meaning<br>C) Speed only<br>D) Error only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">45. What does scaling prevent in distance-based methods?</p>
+  <p class="options">A) All errors<br>B) Dominance by large-scale variables<br>C) All loss<br>D) All noise</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">46. What is usually the best K value?</p>
+  <p class="options">A) The maximum possible K<br>B) The minimum possible K<br>C) A value that is both well-supported and interpretable<br>D) A random value</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">47. What is a good strategy for Butterfly customers?</p>
+  <p class="options">A) Long-term retention at any cost<br>B) Ignore them fully<br>C) Maximize current profit opportunities<br>D) Reduce all contact</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">48. What is a good strategy for Barnacle customers?</p>
+  <p class="options">A) Ignore them<br>B) Increase their spending per purchase<br>C) Remove them immediately<br>D) Replace them with strangers</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">49. What is a common strategy for Stranger customers?</p>
+  <p class="options">A) Invest heavily in them<br>B) Largely ignore or spend little on them<br>C) Reward them as loyal customers<br>D) Treat them as premium customers</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">50. What is a common strategy for True Friends?</p>
+  <p class="options">A) Ignore them<br>B) Retain and nurture them<br>C) Reduce service quality<br>D) Replace them</p>
+  <p class="answer">Answer: B</p>
+
+  <h3>Online Assessment Questions</h3>
+  <p class="question">1. At its most fundamental architectural level, what is the primary operational objective of a base Large Language Model?</p>
+  <p class="options">A) To understand and replicate human emotional intent<br>B) To perform recursive semantic analysis on a global knowledge base<br>C) To predict the most statistically likely subsequent token in a sequence<br>D) To execute logic-based reasoning through symbolic AI integration</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">2. Which parameter directly influences the probability distribution of the next token by flattening or sharpening the logits before softmax is applied?</p>
+  <p class="options">A) Top-P<br>B) Top-K<br>C) Temperature<br>D) Frequency penalty</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">3. In the context of LLM security, what constitutes a prompt injection attack?</p>
+  <p class="options">A) Using brute force to guess an API key<br>B) Overwhelming the context window with repetitive tokens<br>C) Crafting inputs that make the model ignore system instructions and follow adversarial user commands<br>D) Injecting malicious Python code into a vector database</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">4. How does Retrieval-Augmented Generation primarily mitigate the issue of knowledge cutoff?</p>
+  <p class="options">A) By dynamically fine-tuning base weights on real-time data<br>B) By expanding the model’s internal parameter count<br>C) By fetching relevant document chunks from an external database and appending them to the prompt context<br>D) By increasing the model temperature</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">5. Which metric is most commonly used in vector databases to calculate semantic distance between embeddings?</p>
+  <p class="options">A) Euclidean distance<br>B) Cosine similarity<br>C) Hamming distance<br>D) Pearson correlation coefficient</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. What is the environmental significance of prompt efficiency in large-scale enterprise deployments?</p>
+  <p class="options">A) Shorter prompts require less storage<br>B) Minimizing token usage reduces electrical energy consumed by GPUs during inference<br>C) It eliminates cooling systems<br>D) It prevents data corruption</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">7. In which ways does an agentic workflow differ from a linear RAG pipeline?</p>
+  <p class="options">A) It can dynamically select tools based on input<br>B) It can involve self-correction loops<br>C) It requires zero token processing<br>D) It can branch into different logic paths</p>
+  <p class="answer">Answer: A, B, D</p>
+  <p class="question">8. Which of the following best describes the Dolphin Attack vulnerability in AI voice systems?</p>
+  <p class="options">A) Brute-force wake word attack<br>B) Use of ultrasonic sound waves inaudible to humans to deliver malicious commands<br>C) Social engineering via voice mimicry<br>D) Exploiting similar app names</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. From an MLOps perspective, why is user voice data often stored instead of deleted immediately?</p>
+  <p class="options">A) Legal compliance only<br>B) To reduce hardware usage<br>C) To provide labeled data for supervised training and improve accuracy<br>D) To back up communication logs only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">10. What primary technical mechanism allows voice assistants like Alexa to respond without a physical interface?</p>
+  <p class="options">A) Continuous cloud transcription only<br>B) Localized wake-word detection hardware<br>C) Biometric identification only<br>D) Predictive intent modeling only</p>
+  <p class="answer">Answer: B</p>
+
+  <div class="page-break"></div>
+  <h2>Week 11</h2>
+  <h3>Concepts</h3>
+
+  <h4>1. Fairness, Diversity, and Inclusion</h4>
+  <p><strong>Diversity</strong> means having people from different backgrounds, identities, and communities represented in a group.</p>
+  <p><strong>Inclusion</strong> means making sure those people are not only present but also valued, heard, and able to participate meaningfully.</p>
+  <p><strong>Systematic relative disadvantage</strong> means some groups repeatedly face unfair treatment because of bias built into social systems.</p>
+  <p><strong>Equality of opportunity</strong> in the middle-view sense recognizes past disadvantage and tries to create fair chances rather than pretending all groups started from the same position.</p>
+
+  <h4>2. Responsibility and Accountability in AI</h4>
+  <p><strong>The responsibility gap</strong> appears because AI systems can make impactful decisions without having consciousness or moral agency, while humans may not fully control every outcome.</p>
+  <p><strong>Distributed responsibility</strong> means responsibility is shared across developers, firms, deployers, users, regulators, and other stakeholders.</p>
+
+  <h4>3. AI Risk Management Responses</h4>
+  <p><strong>Defense</strong> means using safeguards to prevent or block harmful behavior.</p>
+  <p><strong>Mitigation</strong> means reducing the impact when harm cannot be fully prevented.</p>
+  <p><strong>Transfer</strong> means shifting risk to another party, such as through insurance, outsourcing, or contractual arrangements.</p>
+  <p><strong>Acceptance</strong> means deciding to tolerate a risk when it is low, unavoidable, or not worth the cost of prevention.</p>
+
+  <h4>4. AI Evaluation Measures</h4>
+  <p><strong>Language Modeling Score (LMS)</strong> measures how often a model chooses a sensible or logical answer instead of a nonsensical one.</p>
+  <p><strong>Stereotype Score (SS)</strong> measures how often a model chooses stereotyped responses. A higher stereotype score implies more bias.</p>
+
+  <h4>5. ANN Concepts</h4>
+  <p><strong>ANN training</strong> adjusts weights to reduce prediction error.</p>
+  <p><strong>Backpropagation</strong> sends error backward through the network so the weights can be updated.</p>
+  <p><strong>A feedforward network</strong> moves information from input to output without loops. <strong>Hidden layers</strong> help the model learn more complex patterns.</p>
+  <p><strong>The bias-variance tradeoff</strong> still matters: a model that is too simple underfits, while a model that is too complex overfits.</p>
+
+  <h4>6. Time Series and Financial Signals</h4>
+  <p><strong>Time series data</strong> is collected across time intervals, such as daily stock prices or hourly demand.</p>
+  <p><strong>Technical analysis</strong> uses past prices and trading patterns to estimate future movement, while <strong>fundamental analysis</strong> uses broader economic and company information.</p>
+  <p><strong>RSI</strong> is a momentum indicator. A very high RSI may signal overbought conditions, while a very low RSI may signal oversold conditions.</p>
+
+  <h4>7. Implementation Concepts</h4>
+  <p><strong>Data partitioning</strong> in time series should use older data for training and newer data for testing to avoid look-ahead bias.</p>
+  <p><strong>Feature engineering</strong> creates useful variables such as SMA, RSI, and momentum.</p>
+  <p><strong>Data synchronization</strong> ensures that all time-based features line up correctly on the same timeline before modeling.</p>
+
+  <p class="example"><strong>Example:</strong> If a trading model uses tomorrow’s price while pretending to predict today’s movement, it is cheating. Proper time-series partitioning prevents this kind of look-ahead bias.</p>
+
+  <h3>MCQs</h3>
+  <p class="question">1. What does diversity mainly refer to?</p>
+  <p class="options">A) Equal pay only<br>B) Representation of different groups<br>C) Bias removal only<br>D) Legal rights only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. What does inclusion mainly ensure?</p>
+  <p class="options">A) Hiring only<br>B) Participation and belonging<br>C) Equal salary only<br>D) Legal equality only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">3. What does systematic relative disadvantage mean?</p>
+  <p class="options">A) One-time unfairness<br>B) Repeated unfair treatment of some groups<br>C) Equal opportunity automatically<br>D) Legal protection only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">4. What does the middle view of equality of opportunity recognize?</p>
+  <p class="options">A) It ignores the past.<br>B) It adjusts for past disadvantage.<br>C) It demands identical outcomes.<br>D) It uses random selection.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. Why does a responsibility gap arise in AI?</p>
+  <p class="options">A) Because AI is perfect<br>B) Because AI lacks consciousness and humans do not fully control every outcome<br>C) Because humans are absent<br>D) Because data is always missing</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. What does distributed responsibility mean?</p>
+  <p class="options">A) One person is fully responsible<br>B) Responsibility is shared across actors<br>C) No one is responsible<br>D) Only the AI is responsible</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">7. What does defense mean in AI risk management?</p>
+  <p class="options">A) Ignore the risk<br>B) Prevent or block the risk<br>C) Transfer the risk<br>D) Accept the risk only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. What does mitigation mean in AI risk management?</p>
+  <p class="options">A) Remove all risk completely<br>B) Reduce the impact of risk<br>C) Ignore risk<br>D) Increase risk</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. What does transfer mean in AI risk management?</p>
+  <p class="options">A) Reduce risk only<br>B) Shift risk to another party<br>C) Eliminate all risk<br>D) Ignore the risk</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What does acceptance mean in AI risk management?</p>
+  <p class="options">A) Prevent the risk<br>B) Accept the risk as it is<br>C) Transfer the risk<br>D) Reduce the risk only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">11. What does LMS measure?</p>
+  <p class="options">A) Bias only<br>B) Logic versus nonsense in model outputs<br>C) Speed only<br>D) Memory only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">12. What does Stereotype Score measure?</p>
+  <p class="options">A) Accuracy only<br>B) Bias level<br>C) Speed only<br>D) Memory only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">13. What does a high stereotype score usually indicate?</p>
+  <p class="options">A) Less bias<br>B) More bias<br>C) Better logic<br>D) Faster model</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">14. What is the main aim of ANN training?</p>
+  <p class="options">A) Increasing data size<br>B) Reducing prediction error<br>C) Removing layers<br>D) Increasing speed only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">15. What does backpropagation do?</p>
+  <p class="options">A) Sends data only forward<br>B) Sends error backward for weight updates<br>C) Cleans data<br>D) Makes final predictions only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">16. What is a feedforward network?</p>
+  <p class="options">A) A network with loops<br>B) A network with one-directional flow<br>C) A network with random flow<br>D) A network with no input</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">17. What do hidden layers mainly help with?</p>
+  <p class="options">A) Storage only<br>B) Learning complex patterns<br>C) Output labeling only<br>D) Input capture only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">18. What does overfitting mean?</p>
+  <p class="options">A) Poor training effort only<br>B) Memorizing training data too closely<br>C) No learning<br>D) Random output only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">19. What does underfitting mean?</p>
+  <p class="options">A) The model is too simple.<br>B) The model is too complex.<br>C) The model is perfect.<br>D) The model is random.</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">20. What is time series data?</p>
+  <p class="options">A) Random observations only<br>B) Data ordered across time<br>C) Static grouped data only<br>D) Cluster labels only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">21. What is panel data?</p>
+  <p class="options">A) Data from one entity only<br>B) Multiple entities observed over time<br>C) Static one-time data only<br>D) Random data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">22. What does technical analysis mainly use?</p>
+  <p class="options">A) Weather data<br>B) Price and market data<br>C) Cultural data only<br>D) Legal data only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">23. What does fundamental analysis mainly use?</p>
+  <p class="options">A) Price charts only<br>B) Economic and business information<br>C) Random noise<br>D) Graphics only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">24. What does an RSI above 80 often suggest?</p>
+  <p class="options">A) Strong buy only<br>B) Overbought condition<br>C) No movement<br>D) Data error</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">25. What does an RSI below 20 often suggest?</p>
+  <p class="options">A) Strong sell only<br>B) Oversold condition<br>C) No trading<br>D) Feature mismatch</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">26. What does momentum measure?</p>
+  <p class="options">A) Speed of change<br>B) Price level only<br>C) Time only<br>D) Volume only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">27. What does data partitioning mainly prevent in time series work?</p>
+  <p class="options">A) Overfitting only<br>B) Look-ahead bias<br>C) Noise only<br>D) Fairness bias only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">28. What does feature engineering mean?</p>
+  <p class="options">A) Deleting all raw data<br>B) Creating useful new input variables<br>C) Storing data only<br>D) Visualizing charts only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">29. What does synchronization ensure in time-series modeling?</p>
+  <p class="options">A) Same time alignment across features<br>B) Faster training only<br>C) More layers<br>D) Less data always</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">30. What are hyperparameters?</p>
+  <p class="options">A) Learned weights only<br>B) Predefined settings chosen before training<br>C) Outputs only<br>D) Inputs only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">31. What is the ReLU activation function?</p>
+  <p class="options">A) Always negative<br>B) max(0, x)<br>C) Always linear with no threshold<br>D) Random</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">32. What is a perceptron?</p>
+  <p class="options">A) A dataset<br>B) An artificial neuron<br>C) An output file<br>D) A plotting function</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">33. What does gradient descent do?</p>
+  <p class="options">A) Increase error<br>B) Minimize error<br>C) Search randomly only<br>D) Split the data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">34. What does it mean when a model is called a black box?</p>
+  <p class="options">A) It is fully transparent.<br>B) Its internal reasoning is hard to interpret.<br>C) It is always simple.<br>D) It is always linear.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">35. What does one epoch mean in ANN training?</p>
+  <p class="options">A) One data point<br>B) One full pass through the dataset<br>C) One neuron only<br>D) One layer only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">36. What can too many hidden layers increase if not controlled well?</p>
+  <p class="options">A) Underfitting only<br>B) Overfitting risk<br>C) Data quality automatically<br>D) Fairness automatically</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">37. Which tradeoff balances model simplicity and flexibility?</p>
+  <p class="options">A) Precision-recall tradeoff<br>B) Bias-variance tradeoff<br>C) Cost-benefit tradeoff<br>D) Input-output tradeoff</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">38. What does defense mainly try to do?</p>
+  <p class="options">A) Shift risk to another party<br>B) Prevent risk before it causes harm<br>C) Accept every risk<br>D) Ignore all threats</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">39. What does mitigation mainly try to do?</p>
+  <p class="options">A) Remove all risk always<br>B) Reduce impact when harm occurs<br>C) Transfer cost only<br>D) Eliminate data</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">40. What does transfer mean in risk handling?</p>
+  <p class="options">A) Blocking every risk<br>B) Shifting the burden to another party<br>C) Accepting all harm<br>D) Creating more risk</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">41. What does acceptance mean in risk handling?</p>
+  <p class="options">A) Preventing risk fully<br>B) Tolerating the risk without additional action<br>C) Outsourcing the model always<br>D) Deleting the system</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">42. Why is inclusion different from diversity?</p>
+  <p class="options">A) Inclusion focuses on participation, not just representation.<br>B) Inclusion focuses only on salary.<br>C) Diversity and inclusion mean exactly the same thing.<br>D) Inclusion applies only to algorithms.</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">43. What does systematic disadvantage suggest?</p>
+  <p class="options">A) A random one-time event<br>B) A repeated structural problem<br>C) Perfect equality<br>D) No social pattern</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">44. What kind of score becomes problematic when it is high in stereotype evaluation?</p>
+  <p class="options">A) LMS<br>B) SS<br>C) Accuracy only<br>D) Precision only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">45. What does a high LMS suggest?</p>
+  <p class="options">A) The model often chooses logical answers.<br>B) The model is highly biased.<br>C) The model is always unfair.<br>D) The model cannot reason at all.</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">46. Why should newer data usually be kept for testing in time series?</p>
+  <p class="options">A) To avoid future information leaking into training<br>B) To make training easier only<br>C) To balance labels<br>D) To remove all bias</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">47. Which of the following is an example of a feature-engineered indicator?</p>
+  <p class="options">A) SMA<br>B) Raw company name only<br>C) Page color only<br>D) File extension only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">48. What does feedforward mean?</p>
+  <p class="options">A) Data moves backward first<br>B) Data moves from input to output without loops<br>C) Data always loops back<br>D) Data is never transformed</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">49. Who usually shares responsibility in distributed responsibility frameworks?</p>
+  <p class="options">A) Only the AI model<br>B) Only the final user<br>C) Multiple actors such as developers, firms, and regulators<br>D) Only the government</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">50. What is one practical purpose of ANN-based finance models?</p>
+  <p class="options">A) To predict using time-based market patterns<br>B) To remove all uncertainty from markets<br>C) To eliminate risk entirely<br>D) To avoid feature engineering</p>
+  <p class="answer">Answer: A</p>
+
+  <h3>Online Assessment Questions</h3>
+  <p class="question">1. In AI ethics, what is shared responsibility across actors called?</p>
+  <p class="options">A) Central accountability<br>B) Distributed responsibility<br>C) Legal immunity<br>D) Individual liability</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. What is the use of safeguards to reduce AI harm called?</p>
+  <p class="options">A) Transfer<br>B) Defense<br>C) Acceptance<br>D) Ignorance</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">3. What is it called when AI risk is shifted to another party?</p>
+  <p class="options">A) Mitigation<br>B) Transfer<br>C) Defense<br>D) Avoidance</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">4. What does LMS evaluate?</p>
+  <p class="options">A) Bias only<br>B) Logic correctness<br>C) Speed only<br>D) Cost only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. What does Stereotype Score indicate?</p>
+  <p class="options">A) Fairness only<br>B) Bias level<br>C) Speed only<br>D) Accuracy only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. What does lack of clear AI accountability create?</p>
+  <p class="options">A) Efficiency<br>B) Responsibility gap<br>C) Transparency<br>D) Accuracy</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">7. What does mitigation mainly focus on?</p>
+  <p class="options">A) Eliminating risk fully<br>B) Reducing impact<br>C) Transferring risk<br>D) Ignoring risk</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. What does inclusion mainly ensure?</p>
+  <p class="options">A) Hiring only<br>B) Participation<br>C) Salary only<br>D) Promotion only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. What does diversity mainly focus on?</p>
+  <p class="options">A) Fairness only<br>B) Representation<br>C) Equality only<br>D) Justice only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. How does systematic disadvantage usually occur?</p>
+  <p class="options">A) Randomly only<br>B) Repeatedly across systems<br>C) Only once<br>D) Never in practice</p>
+  <p class="answer">Answer: B</p>
+
+  <div class="page-break"></div>
+  <h2>Week 12</h2>
+  <h3>Concepts</h3>
+
+  <h4>1. Text Mining Basics</h4>
+  <p><strong>Text mining</strong> means converting messy text such as reviews, emails, posts, or documents into structured data that a machine can analyze.</p>
+  <p><strong>Unstructured data</strong> is data without a fixed tabular format. Free text is the main example.</p>
+  <p>The core idea is simple: first structure the text, then analyze it.</p>
+
+  <h4>2. Lexical and Semantic Approaches</h4>
+  <p><strong>Lexical methods</strong> such as Bag-of-Words focus on word presence and frequency but ignore order and deeper meaning.</p>
+  <p><strong>Semantic analysis</strong> tries to understand meaning and context rather than only counting terms.</p>
+  <p><strong>NLP</strong> teaches computers to process human language, while <strong>linguistics</strong> provides the theory of grammar, meaning, and language structure.</p>
+
+  <h4>3. POS Tagging and Core Text Terms</h4>
+  <p><strong>POS tagging</strong> labels words as noun, verb, adjective, and so on. Nouns often indicate product features or topics, while adjectives often signal sentiment.</p>
+  <p><strong>A corpus</strong> is the full text dataset. <strong>A document</strong> is one unit inside the corpus, such as one review or one tweet.</p>
+  <p><strong>A token</strong> is a small unit such as a word or symbol. <strong>Tokenization</strong> is the process of splitting text into tokens.</p>
+
+  <h4>4. Cleaning and Structuring Text</h4>
+  <p><strong>Stop words</strong> such as “the” and “is” are often removed because they add little meaning.</p>
+  <p><strong>Stemming</strong> reduces words to a root form, such as turning “loved” into a stem like “lov”.</p>
+  <p><strong>A Term-Document Matrix (TDM)</strong> turns text into numbers, where rows represent documents, columns represent terms, and values represent frequency.</p>
+  <p><strong>n-grams</strong> capture word combinations. A bigram has two words, such as “data mining”.</p>
+
+  <h4>5. Importance, Similarity, and Sentiment</h4>
+  <p><strong>TF</strong> measures term frequency in one document. <strong>IDF</strong> penalizes terms that appear in many documents. <strong>TF-IDF</strong> highlights words that are important in one document but not common everywhere.</p>
+  <p><strong>Cosine similarity</strong> compares documents using angle-based similarity. A value closer to 1 means the documents are more similar.</p>
+  <p><strong>Phi coefficient</strong> measures whether words tend to appear together.</p>
+  <p><strong>Sentiment analysis</strong> uses lexicons such as AFINN or NRC to classify language as positive, negative, or emotionally meaningful.</p>
+
+  <h4>6. R and Tidy Text Concepts</h4>
+  <p><strong>Tidy format</strong> means each row is one observation and each column is one variable.</p>
+  <p><strong>A tibble</strong> is an improved data frame in R.</p>
+  <p><strong>unnest_tokens()</strong> performs tokenization. <strong>anti_join()</strong> helps remove stop words. <strong>SnowballC</strong> is used for stemming. <strong>widyr</strong> is used for correlation analysis.</p>
+  <p><strong>LLMs</strong> are advanced language models built on transformers and deep learning. They go beyond simple lexical methods and can model context at scale.</p>
+
+  <p class="example"><strong>Example:</strong> If many movie reviews contain the word “boring,” TF-IDF may highlight it in a specific negative review, and sentiment analysis may classify the review as negative.</p>
+
+  <h3>MCQs</h3>
+  <p class="question">1. What is text mining?</p>
+  <p class="options">A) Data storage only<br>B) Converting text into structured data for analysis<br>C) Image processing<br>D) Networking</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. What does unstructured data usually refer to?</p>
+  <p class="options">A) Tables only<br>B) Graphs only<br>C) Free text<br>D) Numeric vectors only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">3. What does the Bag-of-Words approach ignore?</p>
+  <p class="options">A) Words themselves<br>B) Frequency<br>C) Context and order<br>D) Tokens</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">4. What does semantic analysis focus on?</p>
+  <p class="options">A) Word count only<br>B) Meaning and context<br>C) File size only<br>D) Speed only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. What does NLP stand for?</p>
+  <p class="options">A) Network Layer Processing<br>B) Natural Language Processing<br>C) Neural Logic Programming<br>D) Numeric Language Parsing</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. What does POS tagging identify?</p>
+  <p class="options">A) Sentences only<br>B) Grammar roles of words<br>C) Numbers only<br>D) Images</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">7. In text mining, nouns often represent what?</p>
+  <p class="options">A) Actions only<br>B) Features or topics<br>C) Errors only<br>D) Noise only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. In text mining, adjectives often help indicate what?</p>
+  <p class="options">A) Features only<br>B) Sentiment<br>C) Tokens only<br>D) Document count</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">9. What is a corpus?</p>
+  <p class="options">A) A single word<br>B) The full text dataset<br>C) A token only<br>D) A line of code</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What is a document in text mining?</p>
+  <p class="options">A) The whole dataset always<br>B) One unit of text<br>C) An algorithm only<br>D) A matrix only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">11. What is a token?</p>
+  <p class="options">A) A paragraph only<br>B) A chapter only<br>C) A smallest unit such as a word or symbol<br>D) A file type only</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">12. What does tokenization mean?</p>
+  <p class="options">A) Merging text together<br>B) Splitting text into tokens<br>C) Deleting text only<br>D) Sorting files</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">13. What does stemming do?</p>
+  <p class="options">A) Expands words to full meaning<br>B) Reduces words to root-like forms<br>C) Removes all sentiment<br>D) Detects topics only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">14. Why are stop words often removed?</p>
+  <p class="options">A) Because they are the most meaningful words<br>B) Because they often act as noise<br>C) Because they are rare<br>D) Because they are always long</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">15. What does a TDM convert text into?</p>
+  <p class="options">A) Images<br>B) Numbers in a matrix form<br>C) Audio<br>D) Source code</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">16. In a TDM, what do rows usually represent?</p>
+  <p class="options">A) Words<br>B) Documents<br>C) Tokens only<br>D) Sentiment scores only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">17. In a TDM, what do columns usually represent?</p>
+  <p class="options">A) Documents<br>B) Words or terms<br>C) Rows only<br>D) Sentences only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">18. What is a bigram?</p>
+  <p class="options">A) One word<br>B) A two-word combination<br>C) A three-word combination<br>D) A four-word combination</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">19. What does TF mainly measure?</p>
+  <p class="options">A) Uniqueness only<br>B) Frequency within a document<br>C) Document length only<br>D) Correlation only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">20. What does IDF mainly measure?</p>
+  <p class="options">A) Raw term frequency<br>B) Rarity across documents<br>C) File size only<br>D) Token order only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">21. What does a high TF-IDF value usually mean?</p>
+  <p class="options">A) The word is common everywhere.<br>B) The word is important and relatively unique to the document.<br>C) The word is a stop word.<br>D) The word is an error only.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">22. What does cosine similarity equal to 1 suggest?</p>
+  <p class="options">A) The documents are different.<br>B) The documents are identical in direction.<br>C) The documents are random.<br>D) The documents are empty.</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">23. What does cosine similarity equal to 0 suggest?</p>
+  <p class="options">A) The documents are identical.<br>B) The documents are opposite only.<br>C) The documents are unrelated in direction.<br>D) The documents are equal in length.</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">24. What does the Phi coefficient measure?</p>
+  <p class="options">A) File size<br>B) Correlation or co-occurrence relationship<br>C) Length only<br>D) Speed only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">25. What does sentiment analysis detect?</p>
+  <p class="options">A) File size<br>B) Emotional tone or polarity<br>C) Length only<br>D) Token count only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">26. What is AFINN?</p>
+  <p class="options">A) A clustering algorithm<br>B) A sentiment lexicon<br>C) A matrix only<br>D) A code editor</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">27. What does the tidy approach mean?</p>
+  <p class="options">A) Messy data layout<br>B) Structured data layout<br>C) Random data layout<br>D) No data layout</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">28. What is a tibble?</p>
+  <p class="options">A) A graph type<br>B) An improved data frame in R<br>C) A token type<br>D) A word root</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">29. What does <code>unnest_tokens()</code> do?</p>
+  <p class="options">A) Merges text<br>B) Splits text into tokens<br>C) Deletes documents<br>D) Sorts files</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">30. What does <code>anti_join()</code> often help remove?</p>
+  <p class="options">A) Tokens entirely<br>B) Stop words<br>C) Documents only<br>D) Rows at random</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">31. What is SnowballC used for?</p>
+  <p class="options">A) Plotting only<br>B) Stemming<br>C) Tokenization only<br>D) Joining tables only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">32. What is widyr mainly used for?</p>
+  <p class="options">A) Plotting only<br>B) Correlation analysis<br>C) Storage only<br>D) Cleaning only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">33. On what are LLMs mainly based?</p>
+  <p class="options">A) Sorting only<br>B) Transformers<br>C) Tables only<br>D) Tokens without deep learning</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">34. In which year was the transformer architecture famously introduced?</p>
+  <p class="options">A) 2000<br>B) 2010<br>C) 2017<br>D) 2022</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">35. What does Word2Vec mainly do?</p>
+  <p class="options">A) Represents text as numerical vectors<br>B) Creates images<br>C) Processes audio only<br>D) Compiles code</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">36. What does lexical analysis usually ignore?</p>
+  <p class="options">A) Words themselves<br>B) Context<br>C) Tokens<br>D) Frequency</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">37. What does semantic analysis mainly use?</p>
+  <p class="options">A) Meaning<br>B) Count only<br>C) File size only<br>D) Token position only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">38. What can a token be?</p>
+  <p class="options">A) A word<br>B) A number<br>C) A symbol<br>D) All of these</p>
+  <p class="answer">Answer: D</p>
+  <p class="question">39. Which of the following is an example of a stop word?</p>
+  <p class="options">A) Data<br>B) Mining<br>C) The<br>D) Model</p>
+  <p class="answer">Answer: C</p>
+  <p class="question">40. What does a corpus contain?</p>
+  <p class="options">A) Tokens only<br>B) Documents<br>C) Words only<br>D) Numbers only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">41. The TF part of TF-IDF depends mainly on what?</p>
+  <p class="options">A) Number of documents only<br>B) Frequency in the document<br>C) File size only<br>D) Time order only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">42. What does IDF penalize?</p>
+  <p class="options">A) Rare words<br>B) Common words across many documents<br>C) Tokens only<br>D) Documents only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">43. What do n-grams help capture?</p>
+  <p class="options">A) Context between nearby words<br>B) Noise only<br>C) File length only<br>D) Size only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">44. What does a sentiment lexicon assign?</p>
+  <p class="options">A) Image labels only<br>B) Emotional orientation or score<br>C) File size only<br>D) Token length only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">45. What does cosine similarity compare using vectors?</p>
+  <p class="options">A) Distance by count only<br>B) Angle between documents<br>C) Length only<br>D) Speed only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">46. What does a Phi coefficient of +1 suggest?</p>
+  <p class="options">A) No relationship<br>B) The terms occur together very strongly<br>C) They never occur together<br>D) Random behavior only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">47. What does a Phi coefficient of 0 suggest?</p>
+  <p class="options">A) No relationship<br>B) Perfect similarity<br>C) Exact opposition<br>D) Equal length only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">48. At what stage does tokenization occur in the text mining workflow?</p>
+  <p class="options">A) Data parsing and structuring stage<br>B) Final visualization only<br>C) Model deployment only<br>D) Hardware setup only</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">49. What is the first broad goal in text mining?</p>
+  <p class="options">A) Plotting results<br>B) Structuring text for analysis<br>C) Coding models immediately<br>D) Deleting noisy data only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">50. What is the final goal of text mining?</p>
+  <p class="options">A) Storage only<br>B) Extracting useful insights<br>C) Deletion only<br>D) Formatting only</p>
+  <p class="answer">Answer: B</p>
+
+  <h3>Online Assessment Questions</h3>
+  <p class="question">1. Why is structuring important in text mining?</p>
+  <p class="options">A) For storage only<br>B) For analysis<br>C) For deletion only<br>D) For speed only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">2. Which method mainly ignores context?</p>
+  <p class="options">A) Semantic analysis<br>B) Lexical analysis<br>C) NLP broadly<br>D) LLM-based reasoning</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">3. What does TF-IDF mainly highlight?</p>
+  <p class="options">A) Common words across all documents<br>B) Unique and important words<br>C) Stop words only<br>D) Tokens only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">4. What is a corpus?</p>
+  <p class="options">A) A single word<br>B) A text dataset<br>C) A token only<br>D) A model only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">5. What does tokenization split?</p>
+  <p class="options">A) Numbers only<br>B) Text into tokens<br>C) Images only<br>D) Audio only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">6. How does stemming help text analysis?</p>
+  <p class="options">A) It improves normalization of related word forms.<br>B) It only increases speed.<br>C) It only increases storage.<br>D) It only helps plotting.</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">7. What are stop words usually treated as?</p>
+  <p class="options">A) Highly important terms<br>B) Noise terms<br>C) Rare terms only<br>D) Unique terms only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">8. What does a TDM convert text into?</p>
+  <p class="options">A) Tables of numbers<br>B) Words only<br>C) Images<br>D) Sound</p>
+  <p class="answer">Answer: A</p>
+  <p class="question">9. What does cosine similarity compare?</p>
+  <p class="options">A) Words only<br>B) Documents or vectors<br>C) Tokens only<br>D) File size only</p>
+  <p class="answer">Answer: B</p>
+  <p class="question">10. What does sentiment analysis mainly find?</p>
+  <p class="options">A) File size<br>B) Emotion or polarity<br>C) Length only<br>D) Token count only</p>
+  <p class="answer">Answer: B</p>
+
+</body>
+</html>
